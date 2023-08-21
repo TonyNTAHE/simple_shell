@@ -75,7 +75,7 @@ void execute_b(char **command)
 	}
 	/*if (strstr(*command, "cd") == *command)
 	{
-		if (cd_command(command) == -1)
+		if (cd(command) == -1)
 		{
 			perror(" ");
 		}
