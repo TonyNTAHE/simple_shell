@@ -8,8 +8,8 @@ char *line_ptr = NULL;
 int main(void)
 {
 	char **str, *s;
-	
-	while(true)
+
+	while (true)
 	{
 		prompt();
 		s = get_line();
@@ -34,12 +34,17 @@ int main(void)
 	}
 	return (0);
 }
+/**
+ * get_line - reads input from stream.
+ *
+ * Return: number of character readed.
+ */
 char *get_line(void)
 {
 	size_t len = 0;
 	FILE *stream = stdin;
 	ssize_t n_char = getline(&line_ptr, &len, stream);
-	
+
 	if (n_char == -1)
 	{
 		if (feof(stream))

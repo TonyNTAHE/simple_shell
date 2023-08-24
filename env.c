@@ -21,7 +21,7 @@ void env(void)
 int cd(char **args)
 {
 	int signal = chdir(args[1]);
-	
+
 	if (signal == -1)
 	{
 		perror("./hsh");

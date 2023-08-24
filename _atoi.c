@@ -8,7 +8,7 @@ int _atoi(char *s)
 {
 	int i = 0, f = 0, result = 0, d = 0;
 	int sign = 1;
-	
+
 	if (s == NULL)
 		return (0);
 	while (s[i])
@@ -39,5 +39,5 @@ int _atoi(char *s)
 			return ((sign == 1) ? INT_MAX : INT_MIN);
 		result = result * 10 + d;
 	}
-	return (result *sign);
+	return (result * sign);
 }
